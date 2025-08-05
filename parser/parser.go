@@ -92,7 +92,7 @@ func parseWithLLM(subject, body, email string) (*LLMResponse, error) {
 		return nil, fmt.Errorf("prompt load failed: %w",err)
 	}
 	req := openai.ChatCompletionRequest{
-		Model: openai.GPT4o, // use GPT-4o or GPT-3.5
+		Model: openai.gpt-3.5, // use GPT-4o or GPT-3.5
 		Messages: []openai.ChatCompletionMessage{
 			{
 				Role:    openai.ChatMessageRoleSystem,
